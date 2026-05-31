@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Distribuidora Pitangueiras - Polpas e Frutas Congeladas</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        /* Paleta de Cores: Verde Escuro (Confiança/Orgânico) com detalhes Laranja/Amarelo (Energia/Força) */
+        body {
+            background-color: #0b1411; 
+            color: #f4f6f5;
+        }
+
+        #main {
+            margin-left: 120px;
+        }
+
+        /* Sidebar Customizada estilo Etec */
+        .w3-sidebar {
+            width: 120px;
+            background: #06261c; 
+            border-right: 2px solid #ff9100; 
+        }
+
+        /* Classes de cores utilitárias */
+        .texto-laranja { color: #ff9100 !important; }
+        .texto-amarelo { color: #ffc107 !important; }
+        .fundo-verde-forte { background-color: #093f2f !important; color: #ffffff !important; }
+        .fundo-card-sobre { background-color: #11221c !important; border-left: 5px solid #ff9100; }
+
+        /* Estilo para a Grid de Imagens de Clientes/Parceiros */
+        .grid-imagens img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+        .grid-imagens img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Responsividade para Celulares */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="w3-black">
+
+    <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small">
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-orange w3-text-white">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#sobrenos" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-orange w3-text-white">
+            <i class="fa fa-users w3-xxlarge"></i>
+            <p>SOBRE NÓS</p>
+        </a>
+        <a href="#mercado" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-orange w3-text-white">
+            <i class="fa fa-shopping-basket w3-xxlarge"></i>
+            <p>PARCEIROS</p>
+        </a>
+        <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-orange w3-text-white">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTATO</p>
+        </a>
+    </nav>
+
+    <div class="w3-top w3-hide-large w3-hide-medium">
+        <nav class="w3-bar w3-card fundo-verde-forte w3-center w3-small">
+            <a href="#home" class="w3-bar-item w3-button" style="width:25%">HOME</a>
+            <a href="#sobrenos" class="w3-bar-item w3-button" style="width:25%">SOBRE</a>
+            <a href="#mercado" class="w3-bar-item w3-button" style="width:25%">PARCEIROS</a>
+            <a href="#contato" class="w3-bar-item w3-button" style="width:25%">CONTATO</a>
+        </nav>
+    </div>
+
+    <div class="w3-padding-large" id="main">
+
+        <header class="w3-container w3-padding-32 w3-center" id="home">
+            <h1>
+                <img src="imagens/logocabe.png" alt="Logo Distribuidora Pitangueiras" class="w3-image" style="max-width: 700px;">
+            </h1>
+            <p class="w3-large texto-amarelo w3-wide">ENERGIA PURA, SABOR REAL!</p>
+        </header>
+
+        <div class="w3-content w3-padding-64" id="sobrenos">
+            <h2 class="w3-text-orange">Sobre Nós</h2>
+            <hr style="width:120px" class="w3-opacity">
+            
+            <div class="w3-container w3-padding-24 w3-card-4 fundo-card-sobre">
+                <h3 class="texto-amarelo">Nosso Compromisso e Origem</h3>
+                <p class="w3-large w3-justify">Para nós, o que vem de dentro importa. Por isso, nossas frutas não são apenas congeladas; elas carregam uma história de respeito à terra e às pessoas.</p>
+                
+                <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-half w3-margin-bottom">
+                        <h4 class="texto-laranja"><i class="fa fa-leaf"></i> 100% Orgânicas</h4>
+                        <p class="w3-justify">Livres de agrotóxicos e conservantes, mantendo todos os nutrientes e o sabor real da fruta fresca.</p>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <h4 class="texto-laranja"><i class="fa fa-heart"></i> Impacto Social e Local</h4>
+                        <p class="w3-justify">Temos orgulho em dizer que nossa produção vem diretamente de assentamentos e de pequenos produtores familiares. Cada pacote que chega até você fortalece a agricultura familiar e promove o desenvolvimento sustentável de quem vive do campo.</p>
+                    </div>
+                </div>
+
+                <p class="w3-panel w3-leftbar w3-border-amber w3-padding-large w3-medium" style="background-color: rgba(255,193,7,0.05); text-align: justify;">
+                    Seja para o seu negócio ou para a sua saúde, a Pitangueiras é o combustível natural que conecta o respeito à natureza ao seu bem-estar diário.
+                </p>
+                
+                <p class="w3-center w3-xlarge texto-amarelo w3-margin-top"><strong>Pitangueiras: Energia pura, sabor real!</strong></p>
+            </div>
+        </div>
+
+        <div class="w3-content w3-padding-64" id="mercado">
+            <h2 class="w3-text-orange">Nossa Presença no Mercado</h2>
+            <hr style="width:120px" class="w3-opacity">
+            
+            <p class="w3-xlarge w3-justify w3-padding-small">
+                Sarah Pitanga garante o melhor das frutas congeladas para suas parceiras. No Mercado Vida Verde de Clara, e no Frescor do Campo de Elena, as polpas voam das prateleiras. Para os treinos intensos no Studio Fit Energy de Kamila e no Ginásio Força de Beatriz, o shake de pitanga é o combustível oficial. Já no Armazém da Terra, Lívia celebra a pura essência natural em cada pacote entregue.
+            </p>
+
+            <div class="w3-row-padding grid-imagens w3-margin-top">
+                <div class="w3-col l4 m6 w3-margin-bottom">
+                    <img src="imagens/mercado1.png" alt="Mercado Vida Verde de Clara">
+                    <p class="w3-center w3-small texto-amarelo">Mercado Vida Verde</p>
+                </div>
+                <div class="w3-col l4 m6 w3-margin-bottom">
+                    <img src="imagens/mercado2.png" alt="Frescor do Campo de Elena">
+                    <p class="w3-center w3-small texto-amarelo">Frescor do Campo</p>
+                </div>
+                <div class="w3-col l4 m6 w3-margin-bottom">
+                    <img src="imagens/academia1.png" alt="Studio Fit Energy de Kamila">
+                    <p class="w3-center w3-small texto-amarelo">Studio Fit Energy</p>
+                </div>
+                <div class="w3-col l4 m6 w3-margin-bottom">
+                    <img src="imagens/academia2.png" alt="Ginásio Força de Beatriz">
+                    <p class="w3-center w3-small texto-amarelo">Ginásio Força</p>
+                </div>
+                <div class="w3-col l4 m6 w3-margin-bottom">
+                    <img src="imagens/lojanatural.png" alt="Armazém da Terra de Lívia">
+                    <p class="w3-center w3-small texto-amarelo">Armazém da Terra</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-content w3-padding-64 w3-text-grey" id="contato">
+            <h2 class="w3-text-orange">Contato Comercial</h2>
+            <hr style="width:120px" class="w3-opacity">
+            
+            <div class="w3-row w3-section w3-light-grey w3-padding-24 w3-card-2" style="border-radius:8px; color:#222 !important;">
+                <div class="w3-col m4 w3-container w3-margin-bottom">
+                    <p><i class="fa fa-envelope fa-fw texto-laranja w3-xlarge w3-margin-right"></i> <strong>E-mail:</strong><br>distribuidorapitangueiras@gmail.com</p>
+                </div>
+                <div class="w3-col m4 w3-container w3-margin-bottom">
+                    <p><i class="fa fa-phone fa-fw texto-laranja w3-xlarge w3-margin-right"></i> <strong>Telefone / WhatsApp:</strong><br>16 98159-2933</p>
+                </div>
+                <div class="w3-col m4 w3-container w3-margin-bottom">
+                    <p>
+                        <i class="fa fa-instagram fa-fw texto-laranja w3-xlarge w3-margin-right"></i> <strong>Instagram:</strong><br>
+                        <a href="https://instagram.com/distribuidora_pitangueira_ficticio" target="_blank" class="w3-text-teal" style="text-decoration:none; font-weight: bold;">@distribuidora pitangueira</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
